@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    max-width: 100%;
+    /* border: 1px solid red; */
+}
+
+/* nav part style */
+nav {
+    padding: 87px 120px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-title {
+    color: #3A3A3A;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-menu>ul {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu li {
+    list-style: none;
+    margin-right: 34px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #3A3A3A;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* banner part style  */
+.banner-container {
+    width: 100%;
+    display: flex;
+    height: 70vh;
+    gap: 50px;
+}
+
+.banner-content {
+    width: 50%;
+    padding: 145px 0 0 120px;
+}
+
+.banner-title {
+    color: #3A3A3A;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 70px;
+    margin-bottom: 16px;
+}
+
+.banner-description {
+    color: #3A3A3A;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    width: 505px;
+}
+
+.banner-btn {
+    border-radius: 41px;
+    background: #E02C6D;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 24px;
+    border: 0;
+}
+
+.banner-img {
+    width: 50%;
+    background-image: url("../images/main-camera.png"),url("../images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    padding: 0 132px 0 0;
+    background-size: 60%;
+    background-position: center;
+}
+/* responsive style  */
+
+/* for smaller device  */
+@media screen and (max-width:576px) {
+    /* for nav part  */
+    nav{
+        padding: 50px 10px;
+    }
+    .nav-menu>ul {
+        gap: 0;
+    }
+    .nav-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-title{
+        text-align: center;
+    }
+    .nav-menu ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-menu li{
+        margin: 10px;
+    }
+
+    /* for banner part  */
+    .banner-container {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .banner-img {
+        border: 1px solid red;
+        width: 100%;
+        height: 330px;
+        background-size: 75%;
+        padding: 0;
+       
+    }
+    .banner-content{
+        padding: 0;
+        width: 100%;
+    }
+    .banner-title{
+        text-align: center;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .banner-description{
+        width: 390px;
+        text-align:center ;
+    }
+    .btn-res{
+        text-align: center;
+    }
+}
